@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bonc.mapper.UserMapper">
+
+
+    <select id="loadUserByUsername" resultMap="com.bonc.security.User">
+        select * from hr WHERE username=#{username};
+    </select>
+    <insert id="reg"  >
+        select * from hr WHERE username=#{username};
+    </insert>
+
+</mapper>
